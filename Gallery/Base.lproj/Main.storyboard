@@ -8,7 +8,7 @@
         <!--Gallery-->
         <scene sceneID="zrD-gc-ouT">
             <objects>
-                <viewController id="Sor-Lj-mm1" customClass="ListImageViewController" sceneMemberID="viewController">
+                <viewController id="Sor-Lj-mm1" customClass="ListViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="n5R-Jn-LLo"/>
                         <viewControllerLayoutGuide type="bottom" id="rrC-hP-IfN"/>
@@ -45,7 +45,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Gallery" id="1GU-X6-t4L"/>
                     <connections>
-                        <outlet property="myCollectionView" destination="mrJ-XI-zqa" id="4g1-sG-ath"/>
+                        <outlet property="collectionView" destination="mrJ-XI-zqa" id="4g1-sG-ath"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZFV-bj-9SB" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -77,7 +77,7 @@
         <!--Show Image View Controller-->
         <scene sceneID="uCY-s6-6hV">
             <objects>
-                <viewController id="X91-nL-TGO" customClass="ShowImageViewController" sceneMemberID="viewController">
+                <viewController id="X91-nL-TGO" customClass="PlayViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6Gq-ZJ-RR6"/>
                         <viewControllerLayoutGuide type="bottom" id="Gem-ZA-YUn"/>
@@ -131,7 +131,7 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="lbComment" destination="YPH-P7-8hD" id="wtL-Jc-R38"/>
+                        <outlet property="commentLabel" destination="YPH-P7-8hD" id="wtL-Jc-R38"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FEd-A4-YAG" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -141,7 +141,7 @@
         <!--Add Image View Controller-->
         <scene sceneID="LH3-11-hjl">
             <objects>
-                <viewController storyboardIdentifier="addVewController" id="XkN-1E-9hH" customClass="AddImageViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="addVewController" id="XkN-1E-9hH" customClass="AddViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WPl-ta-R7R"/>
                         <viewControllerLayoutGuide type="bottom" id="QQd-M4-Xzj"/>
@@ -204,9 +204,9 @@
                     <navigationItem key="navigationItem" id="fMS-zu-L65"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="btnAddImage" destination="CsH-24-9qU" id="mx9-yA-Zi4"/>
-                        <outlet property="tvComments" destination="a3t-J7-adQ" id="oVj-xQ-Mzs"/>
-                        <outlet property="viewContainer" destination="SEo-cf-rfB" id="TnF-Z7-Kpd"/>
+                        <outlet property="addButton" destination="CsH-24-9qU" id="mx9-yA-Zi4"/>
+                        <outlet property="commentTextView" destination="a3t-J7-adQ" id="oVj-xQ-Mzs"/>
+                        <outlet property="containerView" destination="SEo-cf-rfB" id="TnF-Z7-Kpd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dFF-Bn-jnL" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -216,7 +216,7 @@
         <!--Setting View Controller-->
         <scene sceneID="0sX-am-srI">
             <objects>
-                <viewController id="5WN-bt-F43" customClass="SettingViewController" sceneMemberID="viewController">
+                <viewController id="5WN-bt-F43" customClass="SettingsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iga-QU-ceT"/>
                         <viewControllerLayoutGuide type="bottom" id="lI7-wA-rIJ"/>
@@ -276,11 +276,11 @@
                     <navigationItem key="navigationItem" id="yzo-Qx-RiW"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="myPickerView" destination="8gW-tu-WVu" id="UG1-0u-iEN"/>
-                        <outlet property="mySwitch" destination="OwF-yy-mHG" id="iCR-3B-ZQg"/>
-                        <outlet property="selectedSecond" destination="aFR-r7-n1t" id="MYC-DR-6he"/>
-                        <outlet property="viewContainer1" destination="Wmt-eJ-HXP" id="SFs-LX-U8o"/>
-                        <outlet property="viewContainer2" destination="9iN-cT-q17" id="hSA-DZ-j3o"/>
+                        <outlet property="pickerView" destination="8gW-tu-WVu" id="UG1-0u-iEN"/>
+                        <outlet property="commentSwitch" destination="OwF-yy-mHG" id="iCR-3B-ZQg"/>
+                        <outlet property="intervalLabel" destination="aFR-r7-n1t" id="MYC-DR-6he"/>
+                        <outlet property="containerView1" destination="Wmt-eJ-HXP" id="SFs-LX-U8o"/>
+                        <outlet property="containerView2" destination="9iN-cT-q17" id="hSA-DZ-j3o"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YkZ-0V-doe" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -385,9 +385,9 @@
                     <navigationItem key="navigationItem" id="rRM-W9-wOu"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="btnAddImage" destination="PWc-cy-QYH" id="ihv-0j-bC8"/>
-                        <outlet property="tvComments" destination="pMt-y0-HFc" id="ETE-nS-IYq"/>
-                        <outlet property="viewContainer" destination="27n-tz-l3o" id="Fza-Xh-XKq"/>
+                        <outlet property="editButton" destination="PWc-cy-QYH" id="ihv-0j-bC8"/>
+                        <outlet property="commentTextView" destination="pMt-y0-HFc" id="ETE-nS-IYq"/>
+                        <outlet property="containerView" destination="27n-tz-l3o" id="Fza-Xh-XKq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B7G-yC-edN" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -474,7 +474,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="imageView" destination="AG3-CO-ZvJ" id="R3V-T2-AYR"/>
-                        <outlet property="lbComment" destination="axC-lK-iuZ" id="SXI-g0-OTn"/>
+                        <outlet property="commentLabel" destination="axC-lK-iuZ" id="SXI-g0-OTn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Gd-vp-RBr" userLabel="First Responder" sceneMemberID="firstResponder"/>

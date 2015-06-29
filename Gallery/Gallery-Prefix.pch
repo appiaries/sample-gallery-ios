@@ -13,8 +13,10 @@
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
-    #import "GALConfigurations.h"
+
+    #import "Configurations.h"
     #import <AppiariesSDK/AppiariesSDK.h>
+    #import <SVProgressHUD/SVProgressHUD.h>
 #endif
 
 #ifdef DEBUG
