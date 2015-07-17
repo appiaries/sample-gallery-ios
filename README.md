@@ -10,6 +10,7 @@ In "Settings" view, you may set whether to show/hide comments during the slide-s
 
 ## Updates
 
+* [2015-07-17] Upgraded the _Appiaries SDK_ vesion from _**"Appiaries SDK v.2.0.2"**_ to _**"Appiaries SDK v.2.0.3"**_. 
 * [2015-06-29] Upgraded the _Appiaries SDK_ vesion from _**"Appiaries SDK v.1.4.0"**_ to _**"Appiaries SDK v.2.0.2"**_. 
 
 ## Requirements
